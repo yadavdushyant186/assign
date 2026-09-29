@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignee — Independent Academic & Presentation Studio for College Students</title>
-  <meta name="description" content="Fast, confidential academic assignments and presentation design for college students. ₹110/page, ₹80/slide, ₹20/revision. 80% advance escrow, 100% refund guarantee.">
+  <title>Assign — Independent Academic & Presentation Studio for College Students</title>
+  <meta name="description" content="Fast, confidential academic assignments and presentation design for college students. ₹120/page, ₹80/slide, ₹60/revision. 80% advance escrow, 100% refund guarantee.">
 
   <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,7 +87,7 @@
         </div>
         <div class="flex flex-col">
           <span class="font-display font-extrabold text-2xl tracking-tight text-white flex items-center gap-1.5">
-            Assignee<span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+            Assign<span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
           </span>
           <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400">Academic & PPT Studio</span>
         </div>
@@ -440,7 +440,7 @@
                 A granular assessment of contribution margins, delivery partner density, and cross-merchandising across Tier-1 Indian metros.
               </p>
               <div class="pt-4 flex items-center gap-6 text-xs text-slate-400 font-mono border-t border-slate-800">
-                <span>Presenter: Team Assignee Research</span>
+                <span>Presenter: Team Assign Research</span>
                 <span>Module: Strategic Management (PGDM)</span>
               </div>
             </div>
@@ -752,7 +752,7 @@
     <section id="how-it-works" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-14">
         <span class="text-brand-accent font-bold text-xs tracking-wider uppercase">Frictionless Workflow</span>
-        <h2 class="font-display text-3xl sm:text-5xl font-bold text-white mt-1">How Assignee Works</h2>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold text-white mt-1">How Assign Works</h2>
         <p class="text-slate-400 mt-2 text-xs sm:text-sm">Centralized, anonymous, and managed from order to final delivery.</p>
       </div>
 
@@ -1031,7 +1031,7 @@
 
       <div class="mb-5">
         <span class="text-xs uppercase font-bold text-brand-accent tracking-wider">Earn In College</span>
-        <h3 class="font-display text-2xl font-bold text-white mt-1">Apply as an Assignee Creator</h3>
+        <h3 class="font-display text-2xl font-bold text-white mt-1">Apply as an Assign Creator</h3>
         <p class="text-xs text-slate-400 mt-1">Get paid for making PPTs or writing reports. Strict quality vetting required.</p>
       </div>
 
@@ -1178,7 +1178,7 @@
         <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white">
           <i data-lucide="check-check" class="w-4 h-4"></i>
         </div>
-        <span class="font-display font-bold text-white text-base">Assignee</span>
+        <span class="font-display font-bold text-white text-base">Assign</span>
         <span class="text-slate-600">|</span>
         <span>Independent Academic Formatting & Presentation Design Studio</span>
       </div>
@@ -1190,7 +1190,7 @@
         <button onclick="openCreatorModal()" class="hover:text-brand-300 transition-colors">Join as Writer</button>
       </div>
 
-      <p>© <span id="current-year">2026</span> Assignee. All rights reserved. Independent student assistance studio.</p>
+      <p>© <span id="current-year">2026</span> Assign. All rights reserved. Independent student assistance studio.</p>
     </div>
   </footer>
 
@@ -1199,9 +1199,9 @@
     const CONFIG = {
       ADMIN_NAME: "Dushyant Yadav",
       ADMIN_PHONE: "9772223152",
-      PAGE_RATE: 110,          // ₹110 per page for text assignments
+      PAGE_RATE: 120,          // ₹120 per page for text assignments
       SLIDE_RATE: 80,          // ₹80 per slide for PPT
-      REVISION_RATE: 20,       // ₹20 flat every time a revision is requested
+      REVISION_RATE: 60,       // ₹60 flat every time a revision is requested
       MIN_PAGES: 2,            // Minimum 2 pages for text assignments
       MIN_SLIDES: 3,           // Minimum 3 slides for PPT
       RUSH_MULTIPLIER: 1.5,    // 1.5x for rush orders
@@ -1423,7 +1423,7 @@
     }
 
     // --- ADMIN NOTIFICATION & ORDER MANAGEMENT ENGINE ---
-    const ORDERS_STORAGE_KEY = 'assignee_orders_v1';
+    const ORDERS_STORAGE_KEY = 'assign_orders_v1';
     let soundEnabled = true;
 
     function toggleAudioChime() {
@@ -1486,7 +1486,7 @@
 
     function getStoredOrders() {
       try {
-        const raw = localStorage.getItem(ORDERS_STORAGE_KEY);
+        const raw = localStorage.getItem(ORDERS_STORAGE_KEY) || localStorage.getItem('assignee_orders_v1');
         if (raw) return JSON.parse(raw);
       } catch (e) {
         console.error(e);
@@ -1685,7 +1685,7 @@
 
       const acceptMsg = `*ORDER ACCEPTED BY ADMIN (Dushyant Yadav)*%0A%0A` +
         `Hello *${order.name}*,%0A` +
-        `This is *Dushyant Yadav* (Founder & Admin at *Assignee*).%0A%0A` +
+        `This is *Dushyant Yadav* (Founder & Admin at *Assign*).%0A%0A` +
         `✅ I have reviewed your submission details for *${order.service} (${order.quantity} ${order.unit})* on *"${order.topic}"* and *ACCEPTED* your order!%0A%0A` +
         (order.subtopics ? `📑 *Approved Subtopics to Cover:*%0A${encodeURIComponent(order.subtopics)}%0A%0A` : '') +
         `📌 *Order Confirmation:*%0A` +
@@ -1694,7 +1694,7 @@
         `• Total Agreed Price: ₹${order.total}%0A` +
         `• Advance (80%): *₹${order.advance}*%0A` +
         `• Final 20% on delivery: ₹${order.total - order.advance}%0A` +
-        `• Revision terms: Flat ₹20/revision cycle%0A%0A` +
+        `• Revision terms: Flat ₹60/revision cycle%0A%0A` +
         `💳 *UPI Advance Payment:*%0A` +
         `• UPI ID: *${CONFIG.UPI_ID}*%0A` +
         `• Name: *${CONFIG.ADMIN_NAME}*%0A` +
@@ -1717,9 +1717,9 @@
       saveStoredOrders(orders);
       renderAdminOrders();
 
-      const declineMsg = `*ASSIGNEE ORDER STATUS UPDATE*%0A%0A` +
+      const declineMsg = `*ASSIGN ORDER STATUS UPDATE*%0A%0A` +
         `Hello *${order.name}*,%0A` +
-        `This is *Dushyant Yadav* from Assignee.%0A%0A` +
+        `This is *Dushyant Yadav* from Assign.%0A%0A` +
         `Regarding your brief for "${order.topic}", unfortunately our creators are currently fully booked for this turnaround window and we cannot accept this order today. We apologize for the inconvenience and wish you the best with your submission!`;
 
       const cleanPhone = order.phone.replace(/\D/g, '');
@@ -1887,7 +1887,7 @@
       showAdminLiveBanner(newOrder);
 
       // 3. Prepare client WhatsApp brief to Dushyant Yadav (+91 9772223152)
-      const msg = `*🚨 NEW ASSIGNEE ORDER - APPROVAL REQUIRED*%0A%0A` +
+      const msg = `*🚨 NEW ASSIGN ORDER - APPROVAL REQUIRED*%0A%0A` +
         `*Dear Admin (Dushyant Yadav), a student has submitted an assignment brief for your acceptance:*%0A%0A` +
         `🆔 *Order ID:* ${orderId}%0A` +
         `👤 *Student Name:* ${name}%0A` +
@@ -1899,7 +1899,7 @@
         `⏰ *Target Deadline:* ${state.deadlineFormatted}%0A` +
         `💰 *Estimated Total:* ₹${state.totalPrice}%0A` +
         `💳 *80% Advance Due Upon Acceptance:* ₹${state.advancePrice}%0A` +
-        `🔄 *Revision Terms:* Flat ₹20/revision noted%0A%0A` +
+        `🔄 *Revision Terms:* Flat ₹60/revision noted%0A%0A` +
         `📌 *Guidelines/Rubric:*%0A${encodeURIComponent(notes)}%0A%0A` +
         `👉 *ADMIN ACTION:* Review brief in the on-site Admin Desk or reply to student on WhatsApp with *'ACCEPTED'* (with UPI details for ₹${state.advancePrice}) or *'DECLINED'*.`;
 
@@ -1933,7 +1933,7 @@
       const skill = document.getElementById('cr-skill').value;
       const sample = document.getElementById('cr-sample').value;
 
-      const msg = `*NEW CREATOR APPLICATION - ASSIGNEE*%0A%0A` +
+      const msg = `*NEW CREATOR APPLICATION - ASSIGN*%0A%0A` +
         `👤 *Name:* ${name}%0A` +
         `🏛️ *College:* ${college} (${year})%0A` +
         `📱 *WhatsApp:* ${phone}%0A` +
