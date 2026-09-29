@@ -76,7 +76,7 @@ const CONFIG = {
 ---
 
 ## 🌐 Live Website & Repository
-* **Live Website:** [https://yadavdushyant186.github.io/assignee/](https://yadavdushyant186.github.io/assignee/)
-* **GitHub Repository:** [https://github.com/yadavdushyant186/assignee](https://github.com/yadavdushyant186/assignee)
+* **Live Website:** [https://yadavdushyant186.github.io/assign/](https://yadavdushyant186.github.io/assign/)
+* **GitHub Repository:** [https://github.com/yadavdushyant186/assign](https://github.com/yadavdushyant186/assign)
 * **Antigravity IDE Folder:** [`c:\nutrish\assignee`](file:///c:/nutrish/assignee)
 * **Local Web Server:** `http://localhost:8080`
